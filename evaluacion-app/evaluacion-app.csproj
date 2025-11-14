@@ -46,8 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Autores.cs" />
-    <Compile Include="Categoria.cs" />
+    <Compile Include="AutoresFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoresFrm.Designer.cs">
+      <DependentUpon>AutoresFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CategoriaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,7 +59,15 @@
       <DependentUpon>CategoriaFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
-    <Compile Include="Editoriales.cs" />
+    <Compile Include="EditorialesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditorialesFrm.Designer.cs">
+      <DependentUpon>EditorialesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos\Autores.cs" />
+    <Compile Include="Modelos\Categorias.cs" />
+    <Compile Include="Modelos\Editorial.cs" />
     <Compile Include="Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,8 +76,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AutoresFrm.resx">
+      <DependentUpon>AutoresFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CategoriaFrm.resx">
       <DependentUpon>CategoriaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditorialesFrm.resx">
+      <DependentUpon>EditorialesFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
@@ -92,8 +110,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modelos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,5 +16,28 @@ namespace evaluacion_app
         {
             InitializeComponent();
         }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            CategoriaFrm frm = new CategoriaFrm();
+            frm.MdiParent = this;
+            frm.Show();
+
+
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            AutoresFrm frm = new AutoresFrm();
+            frm.MdiParent = this;
+            frm.Show();
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            EditorialesFrm frm = new EditorialesFrm();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

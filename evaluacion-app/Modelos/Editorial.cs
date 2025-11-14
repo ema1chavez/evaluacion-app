@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace evaluacion_app
+namespace evaluacion_app.Modelos
 {
-    internal class Categoria
+    internal class Editorial
     {
+       
     }
 }
